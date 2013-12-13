@@ -4,9 +4,17 @@
         <meta charset="UTF-8">
         <title>Test reload</title>
         
+        <link rel="stylesheet" href="test-reload.css"/>
         <script src="reload-test.js"></script>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body>        
+        <div>When you logout the page is refreshed.</div>
+        <button onclick=showConfirm()>Logout</button>
+
+        <div id="confirm_holder">
+            <div>Logout and lose unsaved changes?</div>
+            <button onclick=logout()>OK</button>
+            <button onclick=hideConfirm()>Cancel</button>
+        </div>
     </body>
 </html>

@@ -1,0 +1,7 @@
+
+#confirm_holder {
+    width: 300px;
+    height: 100px;
+    display: none;
+    border: 5px solid black;
+}
