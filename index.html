@@ -9,6 +9,13 @@
     </head>
     <body onload=setUpOverridesToBrowserBehaviour()>        
         <div>When you logout the page is refreshed.</div>
+        <div>There are four ways a user can leave an application</div>
+        <ul>
+            <li>Press "Logout" - total control by application.</li>
+            <li>Press "F5" - total control by application, preventDefault on keydown.</li>
+            <li>Press Refresh button - beforeunload will allow you to show a browser dialog.</li>
+            <li>Press "X" window button - beforeunload will allow you to show a browser dialog.</li>
+        </ul>
         <button onclick=showConfirm()>Logout</button>
 
         <div id="confirm_holder">
