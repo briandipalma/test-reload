@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="test-reload.css"/>
         <script src="reload-test.js"></script>
     </head>
-    <body>        
+    <body onload=setUpOverridesToBrowserBehaviour()>        
         <div>When you logout the page is refreshed.</div>
         <button onclick=showConfirm()>Logout</button>
 
